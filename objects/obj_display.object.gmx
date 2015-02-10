@@ -98,10 +98,12 @@ if(working == 0)
           <argument>
             <kind>1</kind>
             <string>draw_set_font(fnt_Console);
+draw_set_color(c_green);
 
-draw_text(200,200, Secretnumber);
-draw_text(300,300, "Type: " + string(type));
-draw_text(300,400, Points);
+
+draw_text(view_wview[0] /2 - (string_width(string(Secretnumber))/2),150, Secretnumber);
+draw_text(0,180, "Type: " + string(type));
+draw_text(256 - string_width("Points: " + string(Points)) ,180, "Points: " + string(Points));
 //draw_text(400,400, random2);
 </string>
           </argument>

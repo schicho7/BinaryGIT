@@ -5,6 +5,7 @@
   </Configs>
   <NewExtensions>
     <extension index="0">extensions\DeveloperConsole</extension>
+    <extension index="1">extensions\CRT Pixel Shader</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_keyboard0</sound>
@@ -14,7 +15,9 @@
     <sound>sound\snd_keyboard_enter</sound>
   </sounds>
   <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_test</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Console">
@@ -46,6 +49,9 @@
       </scripts>
     </scripts>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\sh_CRT.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\fnt_Console</font>
   </fonts>
@@ -53,9 +59,12 @@
     <object>objects\obj_Console</object>
     <object>objects\obj_keyboard</object>
     <object>objects\obj_display</object>
+    <object>objects\obj_CRT</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_init</room>
     <room>rooms\room_Demo</room>
+    <room>rooms\rm_main</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
